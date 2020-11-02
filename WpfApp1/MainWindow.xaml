@@ -1,0 +1,116 @@
+﻿<Window x:Class="WpfApp1.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="WPFWPFWPFWPFWPFFPW" Height="800" Width="1000"
+        WindowStyle="ThreeDBorderWindow"
+        Closing="Window_Closing"
+        Background="Ivory"
+        
+        >
+
+    <Grid Background="Beige" 
+          Width="Auto" 
+          Height="800" 
+          VerticalAlignment="Top" 
+          HorizontalAlignment="Left">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Label 입니댱"
+               Grid.Column="0"
+               Grid.Row="0"
+               FontSize="20"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Background="LightCoral"
+               />
+        <StackPanel Grid.Column="1"
+                    Grid.Row="0"
+                    Orientation="Horizontal"
+                    Background="AliceBlue"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Label Content="C1"/>
+            <Label Content="C2"/>
+            <Label Content="C3"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2"
+                    Grid.Row="0">
+            <Border CornerRadius="25"
+                    Background="Indigo">
+                <TextBox x:Name="input1"
+                         Margin="10"
+                         Padding="10"
+                         BorderThickness="0"
+                         Background="Transparent"/>
+            </Border>
+            <TextBox x:Name="Input1" />
+            <Button Click="Button_Click" Background="PeachPuff">클릭하세요~!! </Button>
+        </StackPanel>
+        <Label Grid.Column="1"
+               Grid.Row="1"
+               Background="LightSalmon"/>
+
+        <ComboBox Grid.Column="0"
+                  Grid.Row="1"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  IsEditable="True"
+                  IsReadOnly="True"
+                  >
+            <ComboBoxItem Content="item1"/>
+            <ComboBoxItem Content="item2"/>
+            <ComboBoxItem Content="item3"/>
+            <ComboBoxItem Content="item4"/>
+        </ComboBox>
+
+        <DockPanel Grid.Column="2"
+                   Grid.Row="1"
+                   Background="Aqua">
+            <Label Content="Test1"
+                   Background="BurlyWood"
+                   DockPanel.Dock="Top"/>
+            <Label Content="Test2"
+                   Background="Aquamarine"
+                   DockPanel.Dock="Bottom"/>
+            <Label Content="Test3"
+                   Background="AliceBlue"
+                   DockPanel.Dock="Right"/>
+            <Label Content="Test4"
+                   Background="Bisque"
+                   DockPanel.Dock="Left"/>
+            <Label Content="Test5"
+                   Background="Blue"
+                   />
+
+        </DockPanel>
+        
+        <TextBlock Text="TextBlock 입니당"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   Background="LightGoldenrodYellow"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"/>
+
+        <TextBox Text="TextBox 입니당"
+                 Grid.Column="1"
+                 Grid.Row="1"
+                 Background="Transparent"/>
+        
+    </Grid>
+</Window>
